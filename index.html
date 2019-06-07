@@ -1,0 +1,165 @@
+<FireBoxRoom>
+ <Assets>
+  <AssetScript src="scripts/objectfader.js"/>
+  <AssetScript src="scripts/bulletedlist.js"/>
+  <AssetScript src="scripts/layout.js"/>
+  <AssetScript src="scripts/pushbutton.js"/>
+  <AssetScript src="scripts/slider.js"/>
+  <AssetScript src="scripts/streetlight.js"/>
+  <AssetScript src="scripts/fireworks.js"/>
+  <AssetScript src="scripts/teleporter.js"/>
+  <AssetScript src="scripts/showcase.js"/>
+  <AssetScript src="scripts/presentation.js"/>
+  <AssetImage id="webvr-linktraversal" src="https://i.imgur.com/uj2LUkQ.gif"/>
+  <AssetImage id="clicker" src="icons/clickimg.png"/>
+ </Assets>
+ <Room col="#000000" default_sounds="false" far_dist="100" fwd="0 0 1" near_dist="0.01" party_mode="false" pbr="true" pos="0 0 -2.8" use_local_asset="room_plane" visible="true" ambient="0.4 0.4 0.4" >
+  <light js_id="layoutlight" light_intensity="8" light_range="20" light_shadow="true" pos="0 2.4 1.8"/>
+  <Object collision_id="plane" cull_face="none" id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide19.JPG" js_id="kvid1" lighting="false" pos="5.7 2 -5.2" scale="4.3 2.419 1" video_id="vid" xdir="0 0 1" ydir="0 1 0" zdir="-1 0 0"/>
+  <presentation pos="0 0 0" zdir="0 0 -1">
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide1.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide2.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide3.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide4.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+    <Object collision_id="plane" cull_face="none" id="plane" image_id="clicker" lighting="false" onclick="room.kweb()" pos="0 0.9 0.25" scale="1 1 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide5.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+    <Object collision_id="plane" cull_face="none" id="plane" image_id="clicker" lighting="false" onclick="room.kweb2()" pos="0 0.9 0.25" scale="1 1 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide6.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide7.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide8.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide9.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide10.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide11.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide12.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide13.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide14.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+   <slide>
+    <Text col="#4cb96f" font_scale="false" font_size=".25" pos="0 2 -.25" scale="1 1 .2">Form</Text>
+    <Text col="#4cb96f" font_scale="false" font_size=".05" pos="-.25 .75 -.3" scale="1 1 .2">&lt;HorizontalLayout&gt;</Text>
+    <HorizontalLayout pos="-.75 .25 -.2" scale=".2 .2 .2">
+     <Object id="https://vesta.janusvr.com/files/bepis/obj/blocks/lamp.obj.gz"/>
+     <Object id="https://vesta.janusvr.com/files/bepis/obj/blocks/lampstand.obj.gz" scale=".2 .2 .2"/>
+     <Object id="https://vesta.janusvr.com/files/bepis/obj/blocks/lantern.obj.gz"/>
+     <Object id="https://vesta.janusvr.com/files/bepis/obj/blocks/streetlamp2.obj.gz"/>
+     <Object id="https://vesta.janusvr.com/files/bepis/obj/blocks/tablelamp.obj.gz" scale=".2 .2 .2"/>
+    </HorizontalLayout>
+    <object col="darkbrown" id="cube" pos="-.25 -.05 -.2" scale="1 .04 .25"/>
+    <Text col="#4cb96f" font_scale="false" font_size=".05" pos=".75 1.5 -.3" scale="1 1 .2">&lt;VerticalLayout&gt;</Text>
+    <VerticalLayout pos=".75 .1 -.2" scale=".3 .3 .3">
+     <Object id="https://vesta.janusvr.com/files/bepis/obj/blocks/chococake.obj.gz" rotate_deg_per_sec="20" rotation="15 0 0" scale=".5 .5 .5"/>
+     <Object id="https://vesta.janusvr.com/files/bepis/obj/blocks/taco.obj.gz" rotate_deg_per_sec="20" rotation="15 0 0"/>
+     <Object id="https://vesta.janusvr.com/files/bepis/obj/blocks/pizza.obj.gz" rotate_deg_per_sec="20" rotation="15 0 0" scale="2 2 2"/>
+     <Object id="https://vesta.janusvr.com/files/bepis/obj/blocks/hotdog.obj.gz" rotate_deg_per_sec="20" rotation="15 0 0" scale=".5 .5 .5"/>
+     <Object id="https://vesta.janusvr.com/files/bepis/obj/blocks/donut2.obj.gz" rotate_deg_per_sec="20" rotation="15 0 0"/>
+    </VerticalLayout>
+    <Text col="#4cb96f" font_scale="false" font_size=".05" pos="-.25 1.5 -.3" scale="1 1 .2">&lt;CircularLayout&gt;</Text>
+    <CircularLayout pos="-.25 1.5 -.2" radius="1.5" scale=".2 .2 .2" xdir="1 0 0" ydir="0 0 1" zdir="0 -1 0">
+     <Object col="red" id="cube" scale=".5 .5 .5"/>
+     <Object col="orange" id="cube" scale=".5 .5 .5"/>
+     <Object col="yellow" id="cube" scale=".5 .5 .5"/>
+     <Object col="green" id="cube" scale=".5 .5 .5"/>
+     <Object col="blue" id="cube" scale=".5 .5 .5"/>
+     <Object col="purple" id="cube" scale=".5 .5 .5"/>
+    </CircularLayout>
+   </slide>
+   <slide>
+    <Text col="#4cb96f" font_scale="false" font_size=".25" pos="0 2 -.25" scale="1 1 .2">Form and Function</Text>
+    <object pos="0 .2 0">
+     <Text col="#0000ff" font_scale="false" font_size=".05" pos="-.5 .15 .2" scale="1 1 .2">&lt;pushButton&gt;</Text>
+     <PushButton height=".2" length=".2" onclick="room.objects['mylamp'].toggleLight()" pos="-.5 0 .5" width=".2"/>
+     <Text col="#4cb96f" font_scale="false" font_size=".05" pos=".2 .15 .2" scale="1 1 .2">&lt;slider&gt;</Text>
+     <Slider max="15" min="0" onchange="room.objects['mylamp'].setBrightness(this.value)" pos=".2 0 .5" value="8"/>
+     <Text col="#4cb96f" font_scale="false" font_size=".05" pos=".8 1.0 -.2" scale="1 1 .2">&lt;streetLight&gt;</Text>
+     <StreetLight col="#ff5" js_id="mylamp" light_pos=".25 1.5 0" model_id="https://vesta.janusvr.com/files/bepis/obj/blocks/streetlamp2.obj.gz" model_pos="0 .5 0" pos=".5 0 0"/>
+     <object col="#ccc" collision_id="cube" id="cube" pos="0 0 0" scale="2.5 .05 .8"/>
+    </object>
+    <slidestep onstart=""/>
+    <slidestep onstart="room.objects['mylamp'].on()"/>
+   </slide>
+   <slide>
+    <Text col="white" font_scale="false" font_size=".1" pos="0 1.8 -.25" scale="1 1 .1">Walk the WebVR metaverse</Text>
+    <Object cull_face="none" id="plane" image_id="webvr-linktraversal" js_id="traversal-video" lighting="false" pos="0 .8 -.4" scale="3 1.8 1" zdir="0 0 1"/>
+    <Text col="#4cb96f" font_scale="false" font_size=".05" pos="-.5 0 -.2" scale="1 1 .2">&lt;teleporter&gt;</Text>
+    <Teleporter external="true" pos="-.5 -.6 -.4" target="traversalwin" url="https://web.janusvr.com/sites/https://vesta.janusvr.com/bepis/portal-hub/"/>
+    <slidestep onstart="room.objects['traversal-video'].image_id = 'webvr-linktraversal'; room.objects['traversal-video'].visible = true;"/>
+   </slide>
+   <slide>
+    <Text col="#4cb96f" font_scale="false" font_size=".25" pos="0 2 -.25" scale="1 1 .2">Embed Native Apps</Text>
+    <Text col="#4cb96f" font_scale="false" font_size=".05" pos="-1 1.3 .2" scale="1 1 .2">&lt;ArcadeMachine&gt;</Text>
+    <object id="http://assets.metacade.com/metacade/joust/joust-standalone.dae.gz" pos="-1 .1 .2" rotate_deg_per_sec="20" scale=".2 .2 .2"/>
+    <object id="plane" image_id="http://mamedev.org/_include/img/logo-mame.png" pos="-1 1.6 0" scale="1 .4 1"/>
+    <Text col="#4cb96f" font_scale="false" font_size=".05" pos="1 1.3 .2" scale="1 1 .2">&lt;IBMPC&gt;</Text>
+    <object id="http://assets.metacade.com/metacade/ibmpc/ibmpc.dae.gz" pos="1 .6 .2" rotate_deg_per_sec="20" scale=".6 .6 .6"/>
+    <object id="plane" image_id="http://www.freewebarcade.com/html5/dosbox/logos/dosbox.png" pos="1 1.6 0" scale=".4 .4 .4"/>
+    <Text col="#4cb96f" font_scale="false" font_size=".05" pos="0 1.3 .2" scale="1 1 .2">&lt;UnityEmbed&gt;</Text>
+    <object id="https://github.com/janusvr-examples/unity-tanks/raw/master/assets/tank.obj" pos="0 .5 .2" rotate_deg_per_sec="20" scale=".2 .2 .2"/>
+    <object id="plane" image_id="http://www.jinxtergames.com/wp-content/uploads/2016/04/unity-logo-white-shadow.png" pos="0 1.6 0" scale="1.08 .4 1"/>
+   </slide>
+   <slide>
+    <Text col="#4cb96f" font_scale="false" font_size=".25" pos="0 2 -.25" scale="1 1 .2">Currency</Text>
+    <object id="plane" image_id="https://i.imgur.com/yA3ACFf.png" pos="0 1 -.4" scale="2.7 1.5 1"/>
+    <Text col="#4cb96f" font_scale="false" font_size=".05" pos=".1 1.2 .2" scale="1 1 .2">&lt;PaymentProcessor&gt;</Text>
+    <object pos=".1 .1 .2" rotate_deg_per_sec="20">
+     <object id="http://assets.metacade.com/metacade/change-machine/change-machine.dae.gz" pos="0 0 -.2" scale=".6 .6 .6"/>
+    </object>
+    <object id="plane" image_id="https://github.com/cjdowner/cryptocurrency-icons/raw/master/128/icon/btc.png" pos="-1.58 1.5 -.3" scale=".5 .5 .5"/>
+    <object id="plane" image_id="https://github.com/cjdowner/cryptocurrency-icons/blob/master/128/icon/eth.png?raw=true" pos="-1.58 1 -.3" scale=".5 .5 .5"/>
+    <object id="plane" image_id="https://baicoianu.com/~bai/webvrgdc/Logo-HighFidelity-Stacked-White.png" pos="-1.58 .5 -.3" scale=".5 .5 .5"/>
+   </slide>
+   <slide>
+    <Text col="#4cb96f" font_scale="false" font_size=".25" pos="0 2 -.25" scale="1 1 .2">Identity</Text>
+    <object id="http://assets.metacade.com/james/james-avatar-improved/james-avatar-improved.fbx" pos="-.75 .2 .4" rotate_deg_per_sec="20" scale=".008 .008 .008"/>
+    <object id="https://web.janusvr.com/media/assets/hoverscreen.obj" pos="0 0 .4" rotate_deg_per_sec="20" scale=".6 .6 .6"/>
+    <object pos=".75 .2 .4" rotate_deg_per_sec="20" scale=".2 .2 .2">
+     <object id="https://webxr.hashbase.io/avatars/y-bot/Beta.fbx.gz" pos="0 0 0"/>
+    </object>
+    <object id="avatar_janusweb" pos=".75 .2 .4" rotate_deg_per_sec="20" scale=".8 .8 .8"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide15.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+    <Object collision_id="plane" cull_face="none" id="plane" image_id="clicker" lighting="false" onclick="room.kweb3()" pos="0 1.6 0.25" scale="1 1 1"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide16.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+    <bulletedlist js_id="featurelist" pos="0 1 0">
+     <listitem text="&lt;widget&gt; "/>
+     <listitem text="&lt;slide&gt; "/>
+    </bulletedlist>
+    <slidestep onstart="room.objects['featurelist'].reset(); room.objects['bgfader'].reset()"/>
+    <slidestep onstart="room.objects['featurelist'].setStep(0); room.objects['bgfader'].fade()"/>
+    <slidestep onstart="room.objects['featurelist'].setStep(1)"/>
+   </slide>
+   <slide>
+    <object id="plane" image_id="https://vesta.janusvr.com/files/janus/slides/Slide17.JPG" lighting="false" pos="0 1.6 -.45" scale="5.68889 3.2 1"/>
+   </slide>
+  </presentation>
+ </Room>
+</FireBoxRoom>
